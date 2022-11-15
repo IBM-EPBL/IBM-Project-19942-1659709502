@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(239, 117, 215);
+}
+a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+a:hover{
+    color: green;
+    font-size: 1.8em;
+}
+#pic,#link,h1{
+    text-align: center;
+}
+img{
+    width: 60%;
+    margin-top: 40px;
+}

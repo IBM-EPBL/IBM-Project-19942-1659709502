@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(108, 189, 162);
+}
+form{
+    padding: 10px;
+    background-color: antiquewhite;
+}
+form label{
+    font-size: large;
+}
+form input{
+    width: 80%;
+    font-size: large;
+}
+form select{
+    font-size: large;
+}
+#submitbuttondiv{
+    text-align: center;
+}
+#submit{
+    width: auto;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}

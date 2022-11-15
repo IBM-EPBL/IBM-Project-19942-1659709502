@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applicant Credibility for Loan Approval</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/predictstyles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Applicant Credibility for Loan Approval Form</h1>
+    <!-- Education, Applicant Income, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History, dependents(4), property(3) -->
+    <form action="/submit" method="post">
+      <label for="Education">Education:</label> <br />
+      <select name="Education" id="">
+        <option value="Graduate">Graduate</option>
+        <option value="Not-Graduate">Not Graduate</option>
+      </select>
+      <br />
+      <br />
+      <label for="ApplicantIncome">Applicant Income: </label> <br />
+      <input type="text" name="ApplicantIncome" />
+      <br />
+      <br />
+      <label for="Co-applicant">Co-applicant Income:</label> <br />
+      <input type="text" name="Co-applicant" />
+      <br />
+      <br />
+      <label for="LoanAmount">Loan Amount:</label> <br />
+      <input type="text" name="LoanAmount" />
+      <br />
+      <br />
+      <label for="Loan-Amount-Term">Loan Amount Term:</label> <br />
+      <input type="text" name="Loan-Amount-Term" />
+      <br />
+      <br />
+      <label for="Credit-History">Credit History:</label> <br />
+      <input type="text" name="Credit-History" />
+      <br />
+      <br />
+      <label for="dependents">Number of Dependents:</label> <br />
+      <select name="dependents" id="">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3+">3+</option>
+      </select>
+      <br />
+      <br />
+      <label for="property">Property Area:</label> <br />
+      <select name="property" id="">
+        <option value="Rural">Rural</option>
+        <option value="Semi-urban">Semi Urban</option>
+        <option value="Urban">Urban</option>
+      </select>
+      <br />
+      <br />
+      <div id="submitbuttondiv">
+        <input type="submit" value="Submit" id="submit" />
+      </div>
+    </form>
+  </body>
+</html>

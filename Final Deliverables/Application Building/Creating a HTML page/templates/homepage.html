@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applicant Credibility for Loan Approval</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/homestyles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Applicant Credibility for Loan Approval</h1>
+    <div id="link">
+      <a href="{{ url_for('prediction') }}">Click to Predict</a>
+    </div>
+    <div id="pic">
+      <img src="{{ url_for('static', filename='images/loan.jpeg') }}" alt="" />
+    </div>
+  </body>
+</html>
